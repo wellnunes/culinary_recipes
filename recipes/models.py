@@ -7,3 +7,4 @@ class Recipe(models.Model):
     ingredients = models.TextField("Ingredientes")
     preparation_method = models.TextField("Modo de preparo")
     chef = models.ForeignKey(User, on_delete=models.CASCADE, related_name="recipes")
+    status = models.BooleanField(default=True)
