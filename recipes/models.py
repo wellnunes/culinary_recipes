@@ -6,4 +6,4 @@ class Recipe(models.Model):
     title = models.CharField("Título", max_length=100)
     ingredients = models.TextField("Ingredientes")
     preparation_method = models.TextField("Modo de preparo")
-    chef = models.ForeignKey("Chef", User, on_delete=models.CASCADE, related_name='recipes')
+    chef = models.ForeignKey(User, on_delete=models.CASCADE, related_name="recipes")
