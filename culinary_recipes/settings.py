@@ -14,7 +14,7 @@ SECRET_KEY = 'django-insecure-snm^zr6rxu&ku+4hme*38+yf0@cf#r=lr1v25@wv$j#_u_-w$_
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
-CORS_ORIGIN_ALLOW_ALL = True
+CORS_ALLOW_ALL_ORIGINS = True
 
 CSRF_TRUSTED_ORIGINS = ['https://*.fly.dev', 'http://*.fly.dev', 'https://*.*.*', 'http://*.*.*']
 
