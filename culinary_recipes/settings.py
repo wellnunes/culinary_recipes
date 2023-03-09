@@ -14,6 +14,7 @@ SECRET_KEY = 'django-insecure-snm^zr6rxu&ku+4hme*38+yf0@cf#r=lr1v25@wv$j#_u_-w$_
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
+CORS_ORIGIN_ALLOW_ALL = True
 
 CSRF_TRUSTED_ORIGINS = ['https://*.fly.dev', 'http://*.fly.dev', 'https://*.*.*', 'http://*.*.*']
 
@@ -27,6 +28,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'corsheaders',
     'drf_yasg',
     'rest_framework',
     'django_filters',
@@ -41,6 +43,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
 ]
 
 ROOT_URLCONF = 'culinary_recipes.urls'
