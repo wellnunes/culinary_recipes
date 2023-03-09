@@ -15,7 +15,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
-CSRF_TRUSTED_ORIGINS = ['https://*.fly.dev', 'http://*.fly.dev', 'https://*', 'http://*']
+CSRF_TRUSTED_ORIGINS = ['https://*.fly.dev', 'http://*.fly.dev', 'https://*.*.*', 'http://*.*.*']
 
 
 # Application definition
