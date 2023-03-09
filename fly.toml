@@ -1,4 +1,4 @@
-# fly.toml file generated for culinaryrecipes on 2023-03-09T15:46:00-03:00
+# fly.toml file generated for culinaryrecipes on 2023-03-09T15:53:41-03:00
 
 app = "culinaryrecipes"
 kill_signal = "SIGINT"
